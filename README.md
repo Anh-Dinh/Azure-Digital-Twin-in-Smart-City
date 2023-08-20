@@ -28,6 +28,14 @@ Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-ingest-i
 - Step 5: Connect the function to IoT Hub
   - 1: Create an event subscription that the IoT Hub will use to send event data to the IoTHubtoTwins function
   - 2: Running both TurbinetoIoTHub.py and Azure Function in the same time.
+  - 3: Seeing updated data in Azure Digital Twins Explorer
 ## Azure Digital Twins to Azure Data Explorer
 Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-data-history-connection?tabs=portal
+- Step 1: Create an Event Hub namespace and event hub
+- Step 2: Create a Kusto (Azure Data Explorer) cluster and database
+- Step 3: Set up data history connection between the Azure Digital Twins instance, the event hub, and the Azure Data Explorer cluster.
+- Step 4: Verify the data flow
+  - 1: Navigate to the event hub and Azure Digital Twins Explorer to ensure it's connected to the right instance.
+
+
 
