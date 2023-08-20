@@ -5,7 +5,7 @@ from datetime import date, datetime
 import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
-CONNECTION_STRING = "HostName=firsthub.azure-devices.net;DeviceId=windturbine1;SharedAccessKey=lFXb5ZDDEYTv36VLKOOfva422EIgJUzpkVW+Bl07VpU="
+CONNECTION_STRING = "your device connection string"
 
 MSG_TXT = '{{"windSpeed": {windSpeed},"windDirection": {windDirection},"Power": {Power},"Current": {Current}}}'
 
