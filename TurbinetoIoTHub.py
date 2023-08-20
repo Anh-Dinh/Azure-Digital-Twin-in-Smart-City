@@ -3,7 +3,7 @@ import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
 # Azure IoT Hub connection string
-connection_string = "HostName=nmslhub.azure-devices.net;DeviceId=Turbine1;SharedAccessKey=eA0A46pAR/7HkZU5KeuUkEqUC7xLr8TDXbeAShtXW90="
+connection_string = "your device connection string"
 
 # MQTT Broker details
 BROKER_ADDRESS = "140.114.89.210"
