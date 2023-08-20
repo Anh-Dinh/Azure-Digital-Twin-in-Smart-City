@@ -29,6 +29,13 @@ Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-ingest-i
   - 1: Create an event subscription that the IoT Hub will use to send event data to the IoTHubtoTwins function
   - 2: Running both TurbinetoIoTHub.py and Azure Function in the same time.
   - 3: Seeing updated data in Azure Digital Twins Explorer
+    - Event Grid:
+       ![Event Grid](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/Event%20Grid.png)
+    - Azure Function:
+      ![Azure Function](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/Function.png)
+    - Azure Digital Twins Explorer Updated:
+      ![Azure Digital Twins](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/Azure%20DT%20Data%20Explorer.png)
+    
 ## Azure Digital Twins to Azure Data Explorer
 Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-data-history-connection?tabs=portal
 - Step 1: Create an Event Hub namespace and event hub
@@ -36,6 +43,14 @@ Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-create-d
 - Step 3: Set up data history connection between the Azure Digital Twins instance, the event hub, and the Azure Data Explorer cluster.
 - Step 4: Verify the data flow
   - 1: Navigate to the event hub and Azure Digital Twins Explorer to ensure it's connected to the right instance.
+    - Event Hub :
+      ![Event Hub](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/EventHub.png)
+    - Azure Digital Twins data visualization:
+      ![Azure DT explorer](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/Azure%20Data%20Explorer%20Visualization.png)
+    - Azure Data Explorer Dashboard:
+      ![Azure Data Explorer](https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/main/images/Azure%20Data%20Explorer.png)
+    
+
 
 
 
