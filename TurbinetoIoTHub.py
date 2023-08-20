@@ -6,8 +6,8 @@ from azure.iot.device import IoTHubDeviceClient, Message
 connection_string = "your device connection string"
 
 # MQTT Broker details
-BROKER_ADDRESS = "140.114.89.210"
-BROKER_PORT = 1883
+BROKER_ADDRESS = ""
+BROKER_PORT = 
 
 # This is the Subscriber for wind turbine generator and weather station
 def on_connect(client, userdata, flags, rc):
