@@ -1,0 +1,28 @@
+{
+    "@context": "dtmi:dtdl:context;2",
+    "@id": "dtmi:windfarm:Windturbine;1",
+    "@type": "Interface",
+    "displayName": "Wind Turbine Model",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "windSpeed",
+        "schema": "double"
+      },
+      {
+        "@type": "Property",
+        "name": "windDirection",
+        "schema": "double"
+      },
+      {
+        "@type": "Property",
+        "name": "Power",
+        "schema": "double"
+      },
+      {
+        "@type": "Property",
+        "name": "Current",
+        "schema": "double"
+      }
+    ]
+  }
