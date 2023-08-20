@@ -1,1 +1,1 @@
-# Azure-Digital-Twin-in-Smart-City
+# Azure-Digital-Twin-in-Wind-Turbine
