@@ -3,11 +3,13 @@ import json
 from azure.iot.device import IoTHubDeviceClient, Message
 
 # Azure IoT Hub connection string
-connection_string = "your device connection string"
+connection_string = "HostName=nmslhub.azure-devices.net;DeviceId=Turbine1;SharedAccessKey=eA0A46pAR/7HkZU5KeuUkEqUC7xLr8TDXbeAShtXW90="
 
 # MQTT Broker details
-BROKER_ADDRESS = ""
-BROKER_PORT = 
+BROKER_ADDRESS = "140.114.89.210"
+BROKER_PORT = 1883
+
+MSG_TXT = '{{"windSpeed": {windSpeed},"windDirection": {windDirection},"Power": {Power},"Current": {Current}}}'
 
 # This is the Subscriber for wind turbine generator and weather station
 def on_connect(client, userdata, flags, rc):
@@ -38,14 +40,17 @@ def send_to_iot_hub(data):
         client = IoTHubDeviceClient.create_from_connection_string(connection_string)
 
         # Create a JSON message with the received data and set the device_id
-        message = {
-        "windSpeed": data.get("windSpeed", 0.0),
-        "windDirection": data.get("windDirection", 0.0),
-        "Power": data.get("Power", 0.0),
-        "Current": data.get("Current", 0.0),
-         }
+        
+        msg_txt_formatted= MSG_TXT.format(
+            windSpeed=data.get("windSpeed", 0.0),
+            windDirection=data.get("windDirection", 0.0),
+            Power=data.get("Power", 0.0),
+            Current=data.get("Current", 0.0)
+        )
         # Send the message to Azure IoT Hub
-        client.send_message(Message(json.dumps(message)))
+        message = Message(msg_txt_formatted, content_encoding="utf-8", content_type="application/json")
+
+        client.send_message(message)
         print("Message sent to Azure IoT Hub:", message)
 
     except Exception as e:
