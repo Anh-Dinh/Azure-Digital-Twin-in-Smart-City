@@ -14,7 +14,7 @@ Reference: https://learn.microsoft.com/en-us/azure/digital-twins/how-to-ingest-i
 - Step 1: Set up Azure IoT Hub
   - 1: Create an Azure IoT Hub instance
   - 2: Create a device with a device id
-  - 3: Make note of the device connection string and replace in the TurbinetoIoTHub.py https://github.com/Anh-Dinh/Azure-Digital-Twin-in-Smart-City/blob/1e3518223fc1b76c3f015268a3a6f183f39b77d9/TurbinetoIoTHub.py
+  - 3: Make note of the device connection string and replace in the TurbinetoIoTHub.py
 - Step 2: Azure Digital Twins
   - 1: Setup a digital twin instance
   - 2: Using the Windturbine.json model (DTDL language) to describe the properties, relationships, and capabilities of your device.
